@@ -1,0 +1,71 @@
+.about-me-wrapper {
+    flex: 1;
+    padding-left: 80px;
+    font-family: "Helvetica Neue", sans-serif ;
+    .intro-text {
+        font-size: 38px;
+        font-family: "Helvetica Neue", sans-serif;
+        margin: 0;
+        line-height: 43px;
+        letter-spacing: 2.1px;
+    }
+    .about-description {
+        font-size: 18px;
+        max-width: 560px;
+        margin-top: 30px;
+        line-height: 36px;
+        font-weight: 500;
+        letter-spacing: 1.1px;
+    }
+    .more-about-work {
+        font-size: 18px;
+        max-width: 560px;
+        margin-top: 20px;
+        line-height: 2;
+        font-weight: 500;
+        letter-spacing: 1.1px;
+    }
+    .scrollOption {
+        font-size: 18px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        width: fit-content;
+        padding: 20px 0 14px;
+        cursor: pointer;
+        line-height: 24px;
+        letter-spacing: 1.1px;
+        border-bottom: 2px solid;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+}
+.intro-image-wrapper {
+    flex: 1;
+    text-align: center;
+    img {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-me-wrapper {
+        padding-left: 50px;
+        padding-right: 20px;
+        .intro-text {
+            font-size: 19px;
+        }
+        .about-description {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .more-about-work {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .intro-image-wrapper {
+        display: none;
+    }
+}
