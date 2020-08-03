@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   closeIcon: {
-    float: 'right'
+    float: 'right',
+    cursor: 'pointer'
   }
 }));
 

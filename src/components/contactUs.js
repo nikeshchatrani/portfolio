@@ -43,9 +43,9 @@ function ContactUs({ ele }) {
           </div>
           <div className="content-right">
             <ul>
-              <li><a href="https://www.linkedin.com/in/dhanashree-gaikwad-76443753/">LinkedIn</a></li>
-              <li><a href="https://twitter.com/artberrys">Twitter</a></li>
-              <li><a href="https://www.behance.net/Dhanashree">Behance</a></li>
+              <li><a href="https://www.linkedin.com/in/dhanashree-gaikwad-76443753/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://twitter.com/artberrys" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="https://www.behance.net/Dhanashree" target="_blank" rel="noopener noreferrer">Behance</a></li>
             </ul>
           </div>
         </div>

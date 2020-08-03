@@ -3,6 +3,7 @@ import '../styles/about-me.scss';
 import aboutMe from '../img/aboutMe.png';
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from '@material-ui/core/styles';
+import Img from 'react-cool-img';
 
 function AboutMe({ele, portfolio}) {
 
@@ -47,7 +48,7 @@ function AboutMe({ele, portfolio}) {
                 </div>
             </div>
             <div className="intro-image-wrapper">
-                <img src={aboutMe} alt={'about-me'} />
+                <Img src={aboutMe} alt={'about-me'} />
             </div>
         </Typography>
     );

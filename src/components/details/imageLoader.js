@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import images from '../images';
+import Img from 'react-cool-img';
 import { ProjectContext } from '../portfolio';
 
 const ImageLoader = () => {
@@ -8,7 +9,7 @@ const ImageLoader = () => {
     <div className="details-image">
       {
         images[project].map((el, i) => {
-          return <img
+          return <Img
             key={i}
             src={require(`./../../img/projects${el.src}`)}
             alt={el.title}/>
