@@ -10,6 +10,7 @@
     ul {
       margin: 0 auto;
       height: 100%;
+      padding-left: 0;
       li {
         padding: 0 20px;
         font-size: 14px;
@@ -32,6 +33,7 @@
         }
         &.icons {
           padding: 0 10px;
+          line-height: 20px;
           a {
             color: black;
             img {
