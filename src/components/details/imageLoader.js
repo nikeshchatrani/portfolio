@@ -10,6 +10,7 @@ const ImageLoader = () => {
       {
         images[project].map((el, i) => {
           return <Img
+            lazy={false}
             key={i}
             src={require(`./../../img/projects${el.src}`)}
             alt={el.title}/>

@@ -31,20 +31,19 @@ const Portfolio = ({ele}) => {
         <div className="project-wrapper">
           <div 
           className="project-image-wrapper"
-          onClick={(e) => showDetails(e, 'upm')}>
-            <Img alt={'upm'} src={UPM}/>
+          onClick={(e) => showDetails(e, 'navigationApp')}>
+            <Img lazy={false} alt={'navigation-app'} src={navigationApp}/>
           </div>
-          <h3 className="project-title">User Preference Management</h3>
-          <div
+          <h3 className="project-title">Navigation App</h3>
+            <div 
             className="project-details"
-            onClick={(e) => showDetails(e, 'upm')}>
-            View Details<span className="view-details-arrow">&#8594;</span></div>
+            onClick={(e) => showDetails(e, 'navigationApp')}>View Details<span className="view-details-arrow">&#8594;</span></div>
         </div>
         <div className="project-wrapper">
           <div 
           className="project-image-wrapper"
           onClick={(e) => showDetails(e, 'payment')}>
-            <Img alt={'payment-integrity'} src={PaymentIntegration}/>
+            <Img lazy={false} alt={'payment-integrity'} src={PaymentIntegration}/>
           </div>
           <h3 className="project-title">Payment Integrity Application</h3>
           <div
@@ -56,7 +55,7 @@ const Portfolio = ({ele}) => {
             <div 
             className="project-image-wrapper"
             onClick={(e) => showDetails(e, 'fieldTrial')}>
-              <Img alt={'field-trial'} src={FieldTrial}/>
+              <Img lazy={false} alt={'field-trial'} src={FieldTrial}/>
             </div>
           <h3 className="project-title">Field Trial Management</h3>
           <div
@@ -64,11 +63,11 @@ const Portfolio = ({ele}) => {
             onClick={(e) => showDetails(e, 'fieldTrial')}>
             View Details<span className="view-details-arrow">&#8594;</span></div>
         </div>
-        <div className="project-wrapper">
+        {/* <div className="project-wrapper">
           <div 
           className="project-image-wrapper"
           onClick={(e) => showDetails(e, 'clientActivation')}>
-            <Img alt={'client activation'} src={ClientActivation}/>
+            <Img lazy={false} alt={'client activation'} src={ClientActivation}/>
           </div>
           <h3 className="project-title">Client Activation Server</h3>
           <div
@@ -80,23 +79,24 @@ const Portfolio = ({ele}) => {
           <div 
           className="project-image-wrapper"
           onClick={(e) => showDetails(e, 'vendor')}>
-            <Img alt={'vendor'} src={Vendor}/>
+            <Img lazy={false} alt={'vendor'} src={Vendor}/>
           </div>
           <h3 className="project-title">Vendor and Contract Management</h3>
           <div 
           className="project-details"
           onClick={(e) => showDetails(e, 'vendor')}>View Details<span className="view-details-arrow">&#8594;</span></div>
-        </div>
+        </div> */}
         <div className="project-wrapper">
           <div 
           className="project-image-wrapper"
-          onClick={(e) => showDetails(e, 'navigationApp')}>
-            <Img alt={'navigation-app'} src={navigationApp}/>
+          onClick={(e) => showDetails(e, 'upm')}>
+            <Img lazy={false} alt={'upm'} src={UPM}/>
           </div>
-          <h3 className="project-title">Navigation App</h3>
-            <div 
+          <h3 className="project-title">User Preference Management</h3>
+          <div
             className="project-details"
-            onClick={(e) => showDetails(e, 'navigationApp')}>View Details<span className="view-details-arrow">&#8594;</span></div>
+            onClick={(e) => showDetails(e, 'upm')}>
+            View Details<span className="view-details-arrow">&#8594;</span></div>
         </div>
     </div>
       <ProjectContext.Provider value={project}>
