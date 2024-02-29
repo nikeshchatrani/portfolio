@@ -57,7 +57,7 @@ function App() {
               classes={{
                 root: classes.link
               }}>
-              DG
+              DC
             </Link>
             <div className='resume-wrapper'>
               <a href={Resume} target="_blank" rel="noopener noreferrer">Download Resume</a>

@@ -23,7 +23,7 @@ function LeftNav(props) {
                 <li className="portfolio" onClick={() => executeScroll(portfolio)}>My work</li>
                 <li className="contactUs" onClick={() => executeScroll(contactUs)}>Get in touch</li>
                 <li className="icons initial">
-                  <a href="https://www.linkedin.com/in/dhanashree-gaikwad-76443753/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/dhanashree-chatrani-76443753/" target="_blank" rel="noopener noreferrer">
                     <LinkedInIcon
                       fontSize={'small'}
                       color={'inherit'}/>
