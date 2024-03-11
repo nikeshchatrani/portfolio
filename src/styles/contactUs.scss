@@ -1,40 +1,30 @@
 .content {
-    font-size: 120px;
+    display: flex;
     .contact-us-intro {
-        font-family: "Helvetica Neue", serif;
+        font-size: 32px;
+        align-self: center;
     }
-    color: #ffffff;
+    color: #525252;
+    flex-direction: column;
     .links-wrapper {
-        padding-top: 20px;
+        margin-top: 50px;
         display: flex;
+        justify-content: space-between;
         .content-left{
-            flex: 1;
             font-size: 16px;
             font-weight: 500;
             line-height: 20px;
-            .location > * {
-                display: inline-block;
-            }
-            .location-icon {
-                vertical-align: top;
-            }
-            .location-text {
-                padding-left: 5px;
-            }
             .email {
-                padding-top: 24px;
+                padding-top: 14px;
                 a {
-                    color: #ffffff;
-                    text-decoration: underline;
-                    padding-left: 7px;
+                    color: #2293a3;
+                    text-decoration: none;
                     vertical-align: super;
                 }
             }
         }
         .content-right {
-            flex: 0 0 100px;
             ul {
-                float: right;
                 margin: 0;
                 line-height: normal;
                 padding: 0;
@@ -43,7 +33,7 @@
                     font-size: 16px;
                     line-height: 39px;
                     a {
-                        color: #ffffff;
+                        color: #2293a3;
                         font-size: 16px;
                         font-weight: 500;
                         line-height: 20px;

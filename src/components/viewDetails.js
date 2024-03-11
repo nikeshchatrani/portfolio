@@ -1,64 +1,44 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import { ImageLoader } from './details';
 import '../styles/viewDetails.scss';
-import CloseIcon from '@material-ui/icons/Close';
+import DSS from '../img/projects/dss/DSS.jpg';
+import WUDS from '../img/projects/design-system/design-sysem.jpg';
+import NavApp from '../img/projects/maximus-pro/maximus-pro.jpg';
+import Timesheet from '../img/projects/timesheet/timesheet.png';
+import EKYC from '../img/projects/ekyc/KYC.jpg';
+import { useParams } from 'react-router-dom';
 
-function getModalStyle() {
-  const top = 30;
-  const left = 50;
-
-  return {
-    top: `${top}px`,
-    left: `${left}px`,
-  };
+const imageInfoObj = {
+  dss: {
+    image: DSS,
+    altText: 'dss'
+  },
+  wuds: {
+    image: WUDS,
+    altText: 'wuds'
+  },
+  navApp: {
+    image: NavApp,
+    altText: 'navApp'
+  },
+  timesheet: {
+    image: Timesheet,
+    altText: 'timesheet'
+  },
+  ekyc: {
+    image: EKYC,
+    altText: 'ekyc'
+  }
 }
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    position: 'fixed',
-    width: '90%',
-    height: '90%',
-    overflow: 'auto',
-    backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-    [theme.breakpoints.down('md')]: {
-      width: '70%',
-      left: '10px !important'
-    }
-  },
-  closeIcon: {
-    float: 'right',
-    cursor: 'pointer'
-  }
-}));
 
-
-const ViewDetails = (props) => {
-
-  const { show, setModal } = props;
-
-  const classes = useStyles();
-  const [modalStyle] = React.useState(getModalStyle);
+const ViewDetails = () => {
+  const { id } = useParams();
+  const getInfoObj = imageInfoObj[id];
 
   return (
-      <Modal
-        open={show}
-        onClose={() => setModal()}
-        aria-labelledby="project-details"
-        aria-describedby="project-detailed-view"
-      >
-        <div style={modalStyle} className={classes.paper}>
-          <CloseIcon
-            fontSize={'small'}
-            color={'inherit'}
-          classes={{root: classes.closeIcon}}
-          onClick={() => setModal()}/>
-          <ImageLoader />
-        </div>
-      </Modal>
+      <div className='view-details-wrapper'>
+        <img src={getInfoObj.image} alt={getInfoObj.altText} />
+      </div>
   );
 };
 
