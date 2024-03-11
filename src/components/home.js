@@ -37,10 +37,10 @@ const theme = createMuiTheme({
     logo: {
       width: '99px',
       height: '51px',
-      [theme.breakpoints.down('md')]: {
+      /* [theme.breakpoints.down('md')]: {
         height: 25,
         width: 50,
-      }
+      } */
     },
     wrapper: {
       paddingTop: 34,

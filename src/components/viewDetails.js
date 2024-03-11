@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/viewDetails.scss';
-import DSS from '../img/projects/dss/DSS.jpg';
-import WUDS from '../img/projects/design-system/design-sysem.jpg';
-import NavApp from '../img/projects/maximus-pro/maximus-pro.jpg';
-import Timesheet from '../img/projects/timesheet/timesheet.png';
-import EKYC from '../img/projects/ekyc/KYC.jpg';
+import DSS from '../img/projects/dss/DSS-2x.jpeg';
+import WUDS from '../img/projects/design-system/Design Sysem-2x.jpeg';
+import NavApp from '../img/projects/maximus-pro/Maximus Pro-2x.jpeg';
+import Timesheet from '../img/projects/timesheet/Miscellaneous-2x.jpeg';
+import EKYC from '../img/projects/ekyc/KYC-2x.jpeg';
 import { useParams } from 'react-router-dom';
 
 const imageInfoObj = {
