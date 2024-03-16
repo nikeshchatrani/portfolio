@@ -5,12 +5,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 function ContactUs({ ele }) {
 
-  const useStyles = makeStyles(() => ({
+  const useStyles = makeStyles(theme => ({
     wrapper: {
       backgroundColor: '#fff',
       display: 'flex',
       flexDirection: 'column',
       padding: '50px 70px',
+      [theme.breakpoints.down('sm')]: {
+        padding: '25px 20px',
+        minHeight: '60vh',
+      },
     }
   }));
 

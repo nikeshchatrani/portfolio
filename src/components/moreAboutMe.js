@@ -1,10 +1,12 @@
 import React from 'react';
 import '../styles/moreAboutMe.scss';
 import AboutMe from '../img/About me image.jpeg';
+import Navigation from './navigation';
 
-function MoreAboutMe() {
+function MoreAboutMe({ portfolio, contactUs }) {
     return (
     <div className='more-about-me-wrapper'>
+        <Navigation portfolio={portfolio} contactUs={contactUs} showAboutMe={false} />
         <div className="content-wrapper">
             <h2>A little bit  more about myself...</h2>
             <div className='paragraph-content'>

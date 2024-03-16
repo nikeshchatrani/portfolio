@@ -1,0 +1,55 @@
+.resume-wrapper {
+    display: flex;
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      align-items: center;
+      li {
+        margin-right: 60px;
+        &:last-child {
+          margin-right: 70px;
+          a { 
+            display: inline-block;
+            img { 
+              vertical-align: middle;
+              width: 120px;
+              height: 45px;
+            }
+          }
+        }
+        color: black;
+        cursor: pointer;
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+    button {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .resume-wrapper {
+      ul {
+        li { 
+          font-size: 12px;
+          margin-right: 10px;
+          &:last-child {
+             margin-right: 20px;
+             a  {
+              img {
+               width: 50px;
+               height: 30px;
+              }
+           }
+          }
+        }
+      }
+    }
+  }

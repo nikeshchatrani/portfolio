@@ -1,5 +1,5 @@
 .more-about-me-wrapper {
-    padding: 40px 0 0 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     .content-wrapper {
@@ -13,5 +13,13 @@
     .image-wrapper {
         display: flex;
         flex-direction: column;
+    }
+    @media screen and (max-width: 800px) {
+        .content-wrapper {
+            margin: 0 20px;
+        }
+        .image-wrapper {
+            min-height: 56vh;
+        }
     }
 }

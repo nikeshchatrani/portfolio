@@ -43,21 +43,30 @@
         }
     }
     @media screen  and (max-width: 800px) {
-        font-size: 40px;
+        font-size: 14px;
         align-items: center;
         padding-left: 30px;
         .contact-us-intro {
-            padding-left: 30px;
+            font-size: 20px;
         }
         .links-wrapper {
             padding-left: 10px;
             flex-wrap: wrap;
+            margin-top: 20px;
             .content-left {
                 font-size: 14px;
+                .email {
+                    padding-top: 10px;
+                }
             }
             .content-right {
                 ul {
                     float: left;
+                    li {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
                 }
 
             }

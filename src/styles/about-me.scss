@@ -8,6 +8,10 @@
 .about-me-wrapper {
     flex: 1;
     padding-left: 50px;
+    .about-heading {
+        font-size: 48px;
+        line-height: 60px;
+    }
     .intro-text {
         font-size: 38px;
         margin: 0;
@@ -44,6 +48,10 @@
         border-bottom: 2px solid;
         margin-bottom: 20px;
         font-weight: bold;
+        a { 
+            text-decoration: none;
+            color: #525252;
+        }
     }
 }
 .intro-image-wrapper {
@@ -71,19 +79,20 @@
 @media screen and (max-width: 800px) {
     .content-wrapper {
         .about-me-wrapper {
-            padding-left: 50px;
-            padding-right: 20px;
-            /* .intro-text {
-                font-size: 19px;
+            padding-left: 0;
+            padding-right: 0;
+            .about-heading {
+                font-size: 20px;
+                line-height: 30px;
             }
             .about-description {
                 font-size: 14px;
                 line-height: 20px;
             }
-            .more-about-work {
+            .scrollOption {
                 font-size: 14px;
                 line-height: 20px;
-            } */
+            }
         }
         .intro-image-wrapper {
             display: none;
