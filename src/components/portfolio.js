@@ -14,15 +14,15 @@ const Portfolio = ({ ele }) => {
         <div className="portfolio-content">
         <h3 className="portfolio-title">My Work</h3>
         <div className="portfolio-container" style={{ backgroundColor: '#f9f9f9', height: 'auto' }}>
-        <div className="project-wrapper">
+          <div className="project-wrapper">
             <div className="project-content">
               <div 
               className="project-image-wrapper">
-                <Link to="/view-details/ekyc">
-                  <img src={ekyc} alt="ekyc" />
+                <Link to="/view-details/dss">
+                  <img src={dss} alt="dss" />
                 </Link>
               </div>
-            </div> 
+            </div>
           </div>
           <div className="project-wrapper">
             <div className="project-content">
@@ -38,11 +38,11 @@ const Portfolio = ({ ele }) => {
             <div className="project-content">
               <div 
               className="project-image-wrapper">
-                <Link to="/view-details/dss">
-                  <img src={dss} alt="dss" />
+                <Link to="/view-details/ekyc">
+                  <img src={ekyc} alt="ekyc" />
                 </Link>
               </div>
-            </div>
+            </div> 
           </div>
           <div className="project-wrapper">
             <div className="project-content">
